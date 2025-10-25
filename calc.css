@@ -4,16 +4,28 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;        
-    align-items: center;
+    flex-direction: column;      /* Stack heading above calculator */
+    justify-content: flex-start; /* Start from top */
+    align-items: center;         /* Center horizontally */
     background: linear-gradient(45deg,#000,#6c6c6c);
+    padding-top: 50px;           /* Space from top */
 }
 
+h1.title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+
 .calculator{
+    
     box-shadow: 0px 0px 15px #000;
     border: 2px solid black;
     border-radius: 20px;
@@ -68,3 +80,4 @@ button:active{
     color: rgb(255, 255, 255);
     font-weight: 900;
 }
+
